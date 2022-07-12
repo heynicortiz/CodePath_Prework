@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Hello World from Nic</string>
+    <string name="hw_intro">Hello World!\n\nMy name is Nic and I\'m just getting started with my journey into programming and development. I hope to earn a BS in Computer Science in the near future, but for now I\'m enjoying my time outdoors as a park manager in sunny South Florida.</string>
+    <string name="hw_button_text">Say Hello!</string>
+</resources>
