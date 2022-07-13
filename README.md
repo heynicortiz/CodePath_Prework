@@ -1,8 +1,8 @@
-# Android Prework - *Name of App Here*
+# Android Prework - *Hello World from Nic*
 
 Submitted by: Nicolas Ortiz
 
-**Name of your app** is an android app that shows an image and introductory message, and allows pressing a button to display a Toast. 
+**Hello World from Nic** is an android app that shows an image and introductory message, and allows pressing a button to display a Toast. 
 
 Time spent: **X** hours spent in total
 
@@ -20,7 +20,13 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-* [ ] List anything else that you can get done to improve the app functionality!
+* [X] Customized toast to appear in the middle of the display. This keeps it from covering the "Say Hello" button placed at the bottom of the screen.
+* [X] Centered toast text. Multi-line toasts do not show centered text by default, this keeps the presentation cleaner.
+* [X] Change toast text based on number of button clicks thus far. Ranges are 0, 1-5, and 5+.
+* [X] Change main image when button click count reaches beyond 5. This is just a bit of an Easter egg to become more familiar with using resources in Kotlin.
+* [X] Custom font used for header text and "Say Hello" button
+* [X] Imported Material Design icon to use for "Say Hello" button
+
 
 ## Video Walkthrough
 
@@ -32,7 +38,9 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+As I was working on this project, I decided to try a multi-line toast. This brought the challenge of no longer being centered and also covering the "Say Hello" button towards the bottom. I did some searching and found some tutorial videos that went over ideas to modify toasts. I was able to implement some of these and also found out that some were deprecated. Ultimately, I implemented a Spannable String but found those to be immutable so I reworked the way I was implementing the changing strings as I incremented my button click counter.
+
+Another challenge was properly changing the "hero" image. I was not quite sure on how to do this, but found I could follow a similar process as the Prework video series showed for bringing the button into the MainActivity.kt file.
 
 ## License
 
