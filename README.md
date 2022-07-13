@@ -26,6 +26,7 @@ The following **additional** features are implemented:
 * [X] Change main image when button click count reaches beyond 5. This is just a bit of an Easter egg to become more familiar with using resources in Kotlin.
 * [X] Custom font used for header text and "Say Hello" button
 * [X] Imported Material Design icon to use for "Say Hello" button
+* [X] Updated app icon to match hero image
 
 
 ## Video Walkthrough
