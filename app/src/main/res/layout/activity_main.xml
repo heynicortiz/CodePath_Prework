@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:padding="20dp"
     tools:context=".MainActivity"
     tools:ignore="ExtraText">
 
@@ -13,34 +12,56 @@
         android:id="@+id/hwIntroTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="92dp"
         android:text="@string/hw_intro"
         android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tokayGeckoEye" />
+        app:layout_constraintTop_toBottomOf="@+id/heroMainImage"
+        app:layout_constraintVertical_bias="0.0"
+        android:paddingHorizontal="10dp" />
 
     <ImageView
-        android:id="@+id/tokayGeckoEye"
+        android:id="@+id/heroMainImage"
         android:layout_width="300dp"
         android:layout_height="375dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        android:contentDescription="@string/hwImageContentDescription"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/nic_crop"
-        tools:srcCompat="@drawable/nic_crop"
-        android:contentDescription="@string/hwImageContentDescription" />
+        tools:srcCompat="@drawable/nic_crop" />
 
     <Button
-        android:id="@+id/hwButton"
+        android:id="@+id/sayHello"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hw_button_text"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        app:icon="@drawable/smile"
+        android:fontFamily="@font/shrikhand"
+        app:fontFamily="@font/shrikhand"
         android:backgroundTint="@color/primary_blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hwIntroTextView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hw_header"
+        android:fontFamily="@font/shrikhand"
+        app:fontFamily="@font/shrikhand"
+        android:textColor="@color/primary_blue"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/hwIntroTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heroMainImage" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
