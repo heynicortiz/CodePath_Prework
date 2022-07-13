@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="20dp"
     tools:context=".MainActivity"
     tools:ignore="ExtraText">
 
@@ -11,8 +13,7 @@
         android:id="@+id/hwIntroTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="28dp"
         android:text="@string/hw_intro"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,21 +22,22 @@
 
     <ImageView
         android:id="@+id/tokayGeckoEye"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:layout_marginTop="60dp"
+        android:layout_width="300dp"
+        android:layout_height="375dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/tokay_gecko_eye"
-        tools:srcCompat="@drawable/tokay_gecko_eye" />
+        app:srcCompat="@drawable/nic_crop"
+        tools:srcCompat="@drawable/nic_crop"
+        android:contentDescription="@string/hwImageContentDescription" />
 
     <Button
         android:id="@+id/hwButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hw_button_text"
-        android:backgroundTint="@color/teal_700"
+        android:backgroundTint="@color/primary_blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
